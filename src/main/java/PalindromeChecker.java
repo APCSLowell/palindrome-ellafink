@@ -44,7 +44,7 @@ public boolean palindrome(String word)
     if(!word.substring(i,i+1).equals(" "))
       space = space + word.substring(i,i+1);
   }
-  word = str;
+  word = space;
   //only letters
   String letter = new String();
   for(int i = 0; i<word.length(); i++){
