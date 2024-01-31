@@ -37,12 +37,22 @@ public void tester()
 }
 public boolean palindrome(String word)
 {
-  String palStr = new String();
-  palStr = word.substring(word.length());
-  for(int i = word.length()-1; i>=0; i--){
-    palStr = palStr + word.substring(i,i+1);
+  word = word.toLowerCase();
+  //no spaces
+  String space = new String();
+  for(int i = 0; i<word.length(); i++){
+    if(!word.substring(i,i+1).equals(" "))
+      space = space + word.substring(i,i+1);
   }
-  return (palStr.equals(word));
+  word = str;
+  //only letters
+  String letter = new String();
+  for(int i = 0; i<word.length(); i++){
+    if(Character.isLetter(word.charAt(i)))
+      letter = letter + word.substring(i,i+1);
+  }
+  word = letter;
+  return reverse(word).equals(word);
 }
 public String reverse(String str)
 {
