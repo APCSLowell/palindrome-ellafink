@@ -42,7 +42,7 @@ public boolean palindrome(String word)
   for(int i = word.length()-1; i>=0; i--){
     palStr = palStr + word.substring(i,i+1);
   }
-  return (str.equals(sWord));
+  return (palStr.equals(word));
 }
 public String reverse(String str)
 {
